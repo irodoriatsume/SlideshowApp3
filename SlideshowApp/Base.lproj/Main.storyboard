@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8D0-xj-dNV">
-                                <rect key="frame" x="100" y="119" width="193" height="190"/>
+                                <rect key="frame" x="100" y="107" width="228" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="190" id="Gxc-CL-NYE"/>
                                     <constraint firstAttribute="height" constant="190" id="eMq-yV-vZB"/>
@@ -25,7 +25,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKS-Si-aSW">
-                                <rect key="frame" x="100" y="119" width="193" height="193"/>
+                                <rect key="frame" x="100" y="107" width="228" height="228"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eKS-Si-aSW" secondAttribute="height" multiplier="20:20" id="7m1-ih-T3S"/>
                                 </constraints>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7t-3E-gjl">
-                                <rect key="frame" x="282" y="606" width="58.666666666666686" height="34"/>
+                                <rect key="frame" x="282.33333333333331" y="680" width="59" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="再生"/>
                                 <connections>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gE8-5Y-cYI">
-                                <rect key="frame" x="30" y="606" width="67" height="34"/>
+                                <rect key="frame" x="30" y="680" width="67" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="67" id="Zym-fO-QlE"/>
                                 </constraints>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3k-MO-cZr">
-                                <rect key="frame" x="166" y="612" width="58.666666666666657" height="27.333333333333371"/>
+                                <rect key="frame" x="166" y="678.66666666666663" width="59" height="34.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                 <connections>
@@ -66,7 +66,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q3k-MO-cZr" firstAttribute="top" secondItem="eKS-Si-aSW" secondAttribute="bottom" constant="300" id="2TX-7g-tR1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R7t-3E-gjl" secondAttribute="bottom" constant="178" id="AXC-Y8-Ma8"/>
                             <constraint firstItem="8D0-xj-dNV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="FiV-wl-WKS"/>
                             <constraint firstItem="eKS-Si-aSW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="ITF-Q3-epU"/>
@@ -79,7 +78,6 @@
                             <constraint firstItem="8D0-xj-dNV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="hfl-1P-rWm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eKS-Si-aSW" secondAttribute="trailing" constant="100" id="p0O-5Q-6Mi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q3k-MO-cZr" secondAttribute="bottom" constant="178.66999999999999" id="xOE-BM-kzp"/>
-                            <constraint firstItem="q3k-MO-cZr" firstAttribute="top" secondItem="eKS-Si-aSW" secondAttribute="bottom" constant="300" id="zWi-iE-dzb"/>
                             <constraint firstItem="eKS-Si-aSW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="zdY-my-A7g"/>
                         </constraints>
                     </view>
@@ -100,18 +98,18 @@
             <objects>
                 <viewController id="sMP-vi-A8F" customClass="ImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s1q-7f-SFW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="869"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcO-x0-obb">
-                                <rect key="frame" x="10" y="119" width="373" height="373"/>
+                                <rect key="frame" x="10" y="107" width="408" height="408"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dcO-x0-obb" secondAttribute="height" multiplier="200:200" id="Mpp-0Y-jzq"/>
                                     <constraint firstAttribute="width" secondItem="dcO-x0-obb" secondAttribute="height" multiplier="50:50" id="Sxb-IC-w7k"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-eV-FDQ">
-                                <rect key="frame" x="152" y="696" width="62" height="35"/>
+                                <rect key="frame" x="160" y="719" width="89" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Sh0-go-xWj"/>
                                 </constraints>

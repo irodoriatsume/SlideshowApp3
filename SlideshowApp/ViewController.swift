@@ -31,6 +31,13 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let imageViewController:ImageViewController = segue.destination as! ImageViewController
         imageViewController.selectedImage = imageView.image
+        
+        if isPlaying {
+            timer?.invalidate()
+            isPlaying = false
+            updateUI()
+        }
+        
     }
 
     func updateUI() {
@@ -43,23 +50,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func forwardButtonTapped(_ sender: Any) {
-        if  currentIndex == 0 {
-            currentIndex = 2
-        } else {
-            currentIndex -= 1
-        }
-        imageView.image = images[currentIndex]
-        
-    }
-    
-    @IBAction func backwardButtonTapped(_ sender: Any) {
         if  currentIndex == 2 {
             currentIndex = 0
         } else {
             currentIndex += 1
         }
         imageView.image = images[currentIndex]
-        
+    }
+    
+    @IBAction func backwardButtonTapped(_ sender: Any) {
+
+        if  currentIndex == 0 {
+            currentIndex = 2
+        } else {
+            currentIndex -= 1
+        }
+        imageView.image = images[currentIndex]
     }
     
     
@@ -71,7 +77,10 @@ class ViewController: UIViewController {
         }
         isPlaying.toggle()
         updateUI()
+        
+
     }
+    
     
     @objc func autoSlide() {
         forwardButtonTapped(forwardButton)
